@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C59631EE-889E-4F5E-8F4B-4D424A9D9264}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Slot_Machine</RootNamespace>
+    <AssemblyName>Slot Machine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\slot.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Help Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Help Window.Designer.cs">
+      <DependentUpon>Help Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main Menu.Designer.cs">
+      <DependentUpon>Main Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Play Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Play Window.Designer.cs">
+      <DependentUpon>Play Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Score Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Score Window.Designer.cs">
+      <DependentUpon>Score Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings Menu.Designer.cs">
+      <DependentUpon>Settings Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Forms\Help Window.resx">
+      <DependentUpon>Help Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main Menu.resx">
+      <DependentUpon>Main Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Play Window.resx">
+      <DependentUpon>Play Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Score Window.resx">
+      <DependentUpon>Score Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings Menu.resx">
+      <DependentUpon>Settings Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eg1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eg2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eg3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eg4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eg5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eg6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eg7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eg8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eg9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eg10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scores.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slot.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\slot.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
